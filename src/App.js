@@ -60,7 +60,7 @@ function createBulktodos() {
 */
 const App = () => {
   //  const [todos, setTodos] = useState(createBulktodos);
-  const [todos, setTodos] = useState();
+  const [todos, setTodos] = useState([]);
 
   const onInsert = useCallback(text => {
     const todo = {
