@@ -3,10 +3,10 @@
 import React from 'react';
 import { Template } from './style/Style';
 
-const TodoTemplate = ({ children }) => {
+const TodoTemplate = ({ children, changeHeight }) => {
   return (
-    <Template>
-      <div className="app-title">일정 관리</div>
+    <Template changeHeight={changeHeight}>
+      <div className="app-title">Todo List</div>
       <div className="contents">{children}</div>
     </Template>
   );

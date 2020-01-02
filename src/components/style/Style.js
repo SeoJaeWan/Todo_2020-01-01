@@ -19,7 +19,7 @@ export const Template = styled.div`
   /* width가 주어진 상태에서 좌우 정렬 */
   width: 630px;
   margin: 0 auto;
-  margin-top: 6rem;
+  margin-top: 5rem;
   ${media.desktop`width: 768px;`}
   ${media.tablet`width: 100%; margin-top: 0rem;`}
   margin-left: auto;
@@ -86,10 +86,6 @@ export const ListItem = styled.div`
   display: flex;
   align-items: center;
 
-  &:nth-child(even) {
-    background: #f8f9fa;
-  }
-
   .checkBox {
     cursor: pointer;
     flex: 1;
@@ -129,24 +125,14 @@ export const ListItem = styled.div`
       color: #ff8787;
     }
   }
-
-  & + & {
-    border-top: 1px solid #dee2ed;
-  }
 `;
 
-export const List = styled.div`
-  min-height: 320px;
-  max-height: 513px;
-  overflow-y: auto;
+export const TodoListItemVirtualized = styled.div`
+  & + & {
+    border-top: 1px solid #dee2e6;
+  }
 
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background-color: #2f3542;
-  }
-  ::-webkit-scrollbar-track {
-    background-color: white;
+  &:nth-child(even) {
+    background: #f8f9fa;
   }
 `;
