@@ -20,7 +20,6 @@ const TodoList = ({ todos, onDelete, onToggle }) => {
     },
     [onDelete, onToggle, todos],
   );
-
   return (
     <List
       className="TodoList"

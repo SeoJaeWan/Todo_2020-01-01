@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 
 const sizes = {
   desktop: 1024,
-  tablet: 768,
+  tablet: 630,
 };
 
 const media = Object.keys(sizes).reduce((acc, label) => {
@@ -20,7 +20,6 @@ export const Template = styled.div`
   width: 630px;
   margin: 0 auto;
   margin-top: 5rem;
-  ${media.desktop`width: 768px;`}
   ${media.tablet`width: 100%; margin-top: 0rem;`}
   margin-left: auto;
   margin-right: auto;

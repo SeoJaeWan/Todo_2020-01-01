@@ -38,7 +38,4 @@ const TodoListItem = ({ todo, onDelete, onToggle, style }) => {
 
   이처럼 React.memo는 리스트 관련 컴포넌트를 작성할 떄 리스트 아이템과 리스트, 두 가지 컴포넌트를 최적화 하는 것을 잊어선 안된다.
 */
-export default React.memo(
-  TodoListItem,
-  (prevProps, nextProps) => prevProps.todo === nextProps.todo,
-);
+export default React.memo(TodoListItem);
